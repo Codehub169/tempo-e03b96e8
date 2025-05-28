@@ -1,0 +1,70 @@
+/* Global Styles for hueneu website */
+
+/* Define animations that might be used by multiple components */
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-8px) translateX(-50%);
+  }
+}
+
+/* General Section Styling (if common patterns emerge) */
+.section-title {
+  font-size: 2.5rem; /* Example size, adjust based on design */
+  color: #E0E0E0; /* Light Grey Text */
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-title-alt {
+  font-size: 2.5rem;
+  color: #FF6347; /* Accent Color for alternative titles */
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive adjustments for global section titles */
+@media (max-width: 768px) {
+  .section-title,
+  .section-title-alt {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title,
+  .section-title-alt {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add other global styles, font imports, or resets below */
+
+/* Example: Import a custom font if specified in the style guide */
+/* @import url('https://fonts.googleapis.com/css2?family=YourChosenFont:wght@300;400;500;700&display=swap'); */
+
+/* body {
+  font-family: 'YourChosenFont', sans-serif; 
+} */

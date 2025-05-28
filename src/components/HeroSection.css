@@ -1,0 +1,89 @@
+.hero-section {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #1A1A1A; /* Deep Charcoal - already on body but good for specificity */
+  position: relative; /* For positioning scroll indicator */
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.logo-container {
+  margin-bottom: 2rem;
+}
+
+.hueneu-logo {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  animation: fadeInScaleUp 1.5s ease-out forwards;
+  /* For the 'just like Instagram's first post' feel, this could be more complex,
+     perhaps involving masks or sequential element reveals if the logo SVG is structured for it.
+     For MVP, a fade-in scale-up is a good start. */
+}
+
+.tagline {
+  font-size: 2.8rem; /* Example size, adjust for elegance and impact */
+  font-weight: 500; /* Slightly less bold than default h1 for sophistication */
+  color: #E0E0E0; /* Light Grey Text */
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #A9A9A9; /* Muted Neutral for subtext */
+  margin-bottom: 2.5rem;
+  font-weight: 300; /* Lighter for subtext */
+}
+
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: subtleBounce 2s infinite ease-in-out;
+  cursor: pointer; /* Indicates it's interactive, though functionality needs JS */
+}
+
+.scroll-down-indicator span {
+  font-size: 1.8rem;
+  color: #D3D3D3; /* Accent Neutral */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 2.2rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+  .hueneu-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1rem;
+  }
+  .tagline {
+    font-size: 1.8rem;
+  }
+  .subtext {
+    font-size: 0.9rem;
+  }
+  .hueneu-logo {
+    width: 80px;
+  }
+  .scroll-down-indicator span {
+    font-size: 1.5rem;
+  }
+}

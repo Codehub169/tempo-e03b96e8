@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g id="who-knew-pop">
+    <!-- A burst shape -->
+    <path d="M50 5 L58.5 32.5 L87.5 37.5 L63.75 58.5 L70 87.5 L50 70 L30 87.5 L36.25 58.5 L12.5 37.5 L41.5 32.5 Z" fill="#FF6347"/>
+    <!-- Text "?" inside -->
+    <text x="50" y="62" font-family="Arial, sans-serif" font-size="30" fill="#1A1A1A" text-anchor="middle" font-weight="bold">?</text>
+  </g>
+</svg>

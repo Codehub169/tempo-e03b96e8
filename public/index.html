@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1A1A1A" /> <!-- Dark background color from style guide -->
+    <meta
+      name="description"
+      content="hueneu: Where stories find their aesthetic. Designs that whisper loud stories."
+    />
+    <title>hueneu | Where stories find their aesthetic.</title>
+    <style>
+      /* Basic reset and body styles to match dark theme */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif; /* Default CRA font stack, will be customized later via CSS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #1A1A1A; /* Dark background from style guide */
+        color: #E0E0E0; /* Default text color from style guide */
+      }
+      /* To ensure root takes full height if needed by app structure, e.g. for vertical centering of loaders */
+      html, body, #root {
+        height: 100%; 
+      }
+       /* Optional: Basic loading message if JS is disabled or slow to load */
+      #root:empty::before {
+        content: "Loading hueneu...";
+        position: absolute; /* Position relative to the viewport if #root is 100% height */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        color: #A9A9A9; /* Muted Neutral from style guide */
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app. hueneu is an experience best viewed with JavaScript.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
